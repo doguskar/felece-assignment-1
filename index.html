@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="assets/fontawesome-free-5.9.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="wrapper">
     <header>
         <div class="logoTitle">Doğuş Kar</div>
-        <nav class="headNav">
+        <nav>
             <ul>
                 <li><a href="#home">Ana Sayfa</a></li>
                 <li><a href="#educations">Eğitimler</a></li>
@@ -23,56 +23,71 @@
     <article class="container">
         <section id="home" class="">
             <img src="img/pp.jpg" alt="pp">
-            <div class="title">Doğuş Kar</div>
-            <div class="subtitle">Developer</div>
-            <a href="#" class="btn">Kursa Git</a>
+            <h1>Doğuş Kar</h1>
+            <h2>Developer</h2>
+            <a href="#" class="btn btn-primary btn-lg">Kursa Git</a>
         </section>
         <section id="educations" class="">
             <h1>Eğitimler</h1>
-            <div class="col-3">
-                <div><i class="fas fa-pen"></i></div>
-                <h2>Sınıf İçi Eğitimler</h2>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ipsam.</div>
+            <div class="display-flex">
+                <div>
+                    <div><i class="fas fa-pen"></i></div>
+                    <h2>Sınıf İçi Eğitimler</h2>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div>
+                    <div><i class="fas fa-pen"></i></div>
+                    <h2>Online İçerikler</h2>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div>
+                    <div><i class="fas fa-pen"></i></div>
+                    <h2>Konferanslar</h2>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
             </div>
-            <div class="col-3">
-                <div><i class="fas fa-pen"></i></div>
-                <h2>Online İçerikler</h2>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ipsam.</div>
-            </div>
-            <div class="col-3">
-                <div><i class="fas fa-pen"></i></div>
-                <h2>Konferanslar</h2>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ipsam.</div>
-            </div>
+        </section>
         <section id="courses" class="">
             <h1>Kurslar</h1>
             <div class="course-card">
-                <img src="img/python.jpg" alt="python">
                 <div class="discount">%90 İndirim</div>
-                <h2>(40+ Saat) Python | Sıfırıdan İleri Seviye Programlama (2020)</h2>
-                <div class="description">(40+ Saat) Python | Sıfırıdan İleri Seviye Programlama (2020)</div>
-                <div class="tags">Cumhur Can Kutlu, Yazılım Bilimi</div>
-                <div class="score-votes">4.6 | (199990 Oylama)</div>
+                <div>
+                    <img src="img/python.jpg" alt="python">
+                </div>
+                <div>
+                    <h2>(40+ Saat) Python | Sıfırıdan İleri Seviye Programlama (2020)</h2>
+                    <div class="description">(40+ Saat) Python | Sıfırıdan İleri Seviye Programlama (2020)</div>
+                    <div class="tags">Cumhur Can Kutlu, Yazılım Bilimi</div>
+                    <div class="score-votes">4.6 | (199990 Oylama)</div>
+                </div>
             </div>
             <div class="course-card">
-                <img src="img/java.jpg" alt="java">
                 <div class="discount">%90 İndirim</div>
-                <h2>Komple Java Geliştirici Kursu</h2>
-                <div class="description">Komple Java Geliştirici Kursu | Sıfırdan Java Öğrenin</div>
-                <div class="tags">Cumhur Can Kutlu, Yazılım Bilimi</div>
-                <div class="score-votes">4.6 | (7000 Oylama)</div>
+                <div>
+                    <img src="img/java.jpg" alt="java">
+                </div>
+                <div>
+                    <h2>Komple Java Geliştirici Kursu</h2>
+                    <div class="description">Komple Java Geliştirici Kursu | Sıfırdan Java Öğrenin</div>
+                    <div class="tags">Cumhur Can Kutlu, Yazılım Bilimi</div>
+                    <div class="score-votes">4.6 | (7000 Oylama)</div>
+                </div>
             </div>
             <div class="course-card">
-                <img src="img/javascript.jpg" alt="javascript">
                 <div class="discount">%90 İndirim</div>
-                <h2>Komple Modern JavaScript Kursu</h2>
-                <div class="description">Komple Modern JavaScript Kursu - ES6+</div>
-                <div class="tags">Cumhur Can Kutlu, Yazılım Bilimi</div>
-                <div class="score-votes">4.6 | (2000 Oylama)</div>
+                <div>
+                    <img src="img/javascript.jpg" alt="javascript">
+                </div>
+                <div>
+                    <h2>Komple Modern JavaScript Kursu</h2>
+                    <div class="description">Komple Modern JavaScript Kursu - ES6+</div>
+                    <div class="tags">Cumhur Can Kutlu, Yazılım Bilimi</div>
+                    <div class="score-votes">4.6 | (2000 Oylama)</div>
+                </div>
             </div>
         </section>
     </article>
-    <footer id="contact" class="">
+    <footer id="contact" class="bg-dark">
         <h1>Bana Ulaşın</h1>
         <form action="" method="get">
             <div class="form-group">
@@ -85,7 +100,7 @@
             </div>
             <div class="form-group">
                 <label for="message">İsim</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mesajınız..." class="form-control"></textarea>
+                <textarea name="message" id="message" rows="5" placeholder="Mesajınız..." class="form-control"></textarea>
             </div>
             <input type="submit" value="Gönder" class="btn btn-wide">
         </form>
